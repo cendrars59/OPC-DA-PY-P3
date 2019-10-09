@@ -3,7 +3,7 @@ import pygame
 
 def display_win_view(screen):
     """
-
+    function to display the success screen
     :param screen:
     :return:
     """
@@ -15,7 +15,7 @@ def display_win_view(screen):
 
 def display_lost_view(screen):
     """
-
+    function to display the game over screen
     :param screen:
     :return:
     """

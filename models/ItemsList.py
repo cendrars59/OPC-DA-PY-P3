@@ -10,7 +10,7 @@ class ItemsList:
 
     def dispatch_items_randomly(self, level):
         """
-
+        Function to dispatch randomly each items
         :param level:
         :return:
         """
@@ -18,6 +18,11 @@ class ItemsList:
             item.position = Item.define_random_position(item, level)
 
     def find_an_item_in_list(self, level):
+        """
+        function to find an item into the list
+        :param level:
+        :return:
+        """
         for element in self.list:
             element.find_an_item(element, level)
 

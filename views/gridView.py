@@ -3,6 +3,18 @@ import pygame
 
 
 def display_grid(level, screen, player, wall, ground, playericon, enemyicon, sprite_sizing):
+    """
+    function to display the grid according the position of each calculated element
+    :param level:
+    :param screen:
+    :param player:
+    :param wall:
+    :param ground:
+    :param playericon:
+    :param enemyicon:
+    :param sprite_sizing:
+    :return:
+    """
     row_number = 0
     for row in level.grid:
         col_number = 0
