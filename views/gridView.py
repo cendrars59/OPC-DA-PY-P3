@@ -1,5 +1,7 @@
 # -*- coding: Utf-8 -*
 import pygame
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 128)
 
 
 def display_grid(level, screen, player, wall, ground, playericon, enemyicon, sprite_sizing):
@@ -35,7 +37,11 @@ def display_grid(level, screen, player, wall, ground, playericon, enemyicon, spr
                     if item.position == (row_number, col_number):
                         icon = pygame.image.load(item.icon_path).convert()
                         screen.blit(icon, (x, y))
-
+            elif level.grid[row_number][col_number] == 'c':
+                if player.type == 'player':
+                    font = pygame.font.Font('freesansbold.ttf', 32)
+                    text = font.render(str(player.count_items_found), True, BLUE, GREEN)
+                    screen.blit(text, (x, y))
             col_number += 1
         row_number += 1
     pygame.display.flip()

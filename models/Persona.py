@@ -130,3 +130,15 @@ class Persona:
 
         level.grid[self.position[0]][self.position[1]] = next_value_on_grid  # Set new value according new position
 
+    @property
+    def count_items_found(self):
+        """
+        property to get the number of items found by the player
+        :return: integer
+        """
+        items_found_counter = 0
+        for item in self.grabbedItems:
+            if item.found:
+                items_found_counter += 1
+        return items_found_counter
+

@@ -43,6 +43,7 @@ while not_stop:
             if event.type == pygame.QUIT:
                 not_stop = False
                 pygame.quit()
+                exit()
 
             if event.type == KEYDOWN and event.key == K_RETURN:
                 play_level = True
@@ -57,6 +58,7 @@ while not_stop:
             if event.type == pygame.QUIT:
                 not_stop = False
                 pygame.quit()
+                exit()
 
             if event.type == KEYDOWN and event.key == K_SPACE:
                 display_welcome_page = True
@@ -68,6 +70,7 @@ while not_stop:
             if event.type == pygame.QUIT:
                 not_stop = False
                 pygame.quit()
+                exit()
 
             if event.type == KEYDOWN and event.key == K_SPACE:
                 display_welcome_page = True
@@ -105,6 +108,7 @@ while not_stop:
                 if event.type == pygame.QUIT:
                     not_stop = False
                     pygame.quit()
+                    exit()
                 if event.type == KEYDOWN:
                     if event.key == K_DOWN or event.key == K_UP or event.key == K_RIGHT or event.key == K_LEFT:
                         player.move(event.key, level)
