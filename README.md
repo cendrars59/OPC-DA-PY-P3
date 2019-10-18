@@ -12,7 +12,7 @@ The player has to gather to all the items on the map and be on the exit position
 - From end game pages 
 Press space key to be redirected to the welcome to restart a new game session
 
-#2. Perquisites
+# 2. Perquisites
 
 ## 2.1 OS 
 The game has been designed to run on the following platform 
@@ -30,5 +30,5 @@ The game has been designed to run on the following platform
 - pygame 1.9.6 
 - PIL  
 
-#3. Licence
+# 3. Licence
 - MIT 
